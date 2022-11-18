@@ -46,7 +46,6 @@ def get_listings_from_search_results(html_file):
         t = (title, cost, id)
         l.append(t)
 
-    # print(l)
     return l
 
 
@@ -125,7 +124,6 @@ def get_detailed_listing_database(html_file):
         combined_tup = tup + get_listing_information(tup[2])
         l.append(combined_tup)
     
-    # print(l)
     return l
 
 
@@ -193,7 +191,6 @@ def check_policy_numbers(data):
             else:
                 l.append(listing_id)
 
-    # print(l)
     return l
 
 
