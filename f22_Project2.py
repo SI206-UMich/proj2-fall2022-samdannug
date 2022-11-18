@@ -182,7 +182,6 @@ def check_policy_numbers(data):
     pattern = "20\d\d-00\d\d\d\dSTR"
     pattern2 = "STR-000\d\d\d\d"
     for tup in data:
-        # print(tup)
         policy_number = tup[3]
         listing_id = tup[2]
         if policy_number != "Pending" and policy_number != "Exempt":
